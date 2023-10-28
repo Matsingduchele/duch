@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajout d'une question</title>
+    <link rel = "stylesheet" href="Projets.css">
+</head>
+<body>
+    <h1>Ajout d'une question</h1>
+    <form id="questionForm">
+        <label for="questionType">Question type:</label>
+        <select name="questionType" id="questionType">
+            <option value="1">Dictation</option>
+            <option value="2">Mental Math</option>
+            <option value="3">Opened Question</option>
+        </select>
+        <br>
+        
+        <label for="text">Text:</label>
+        <textarea name="text" id="text" rows="4" cols="50"></textarea>
+        <br>
+        <label for="authorAnswer">Author Answer:</label>
+        <textarea name="authorAnswer" id="authorAnswer" rows="4" cols="50"></textarea>
+        <br>
+        <button class="bouton" onclick="saveQuestion()">Sauvegarder</button>
+    </form>
+    <script src ="Projets.js"></script>
+</body>
+</html>
